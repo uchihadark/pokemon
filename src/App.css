@@ -72,17 +72,18 @@ body {
 
 .container .pokemon_image img {
     max-width: 100%;
-    height: auto;
+    height: 400px;
+    width: 400px;
 }
 
-.container .pokemon_attacks {
+.container .pokemon_attack {
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
     justify-content:space-between;
 }
 
-.container .pokemon_attacks span {
+.container .pokemon_attack span {
     width: 30%;
     background-color: #f16820;
     border-radius: 3px;
@@ -105,7 +106,7 @@ body {
 
 }
 
-.container.pokemon_meta span {
+.container .pokemon_meta span {
     color :white;
     text-shadow: 0 0.125rem 0.25rem rgba(0, 0,0,0.4);
     background-color:purple;
@@ -123,12 +124,12 @@ body {
 }
 
 @media (max-width:400px){
-    .container .pokemon_attacks .container .pokemon_meta{
+    .container .pokemon_attack .container .pokemon_meta{
         flex-wrap: wrap;
     }
 
     .container .pokemon_meta span,
-    .container .pokemon_attacks span,
+    .container .pokemon_attack span,
     .container .pokemon {
         width: 100%;
     }
